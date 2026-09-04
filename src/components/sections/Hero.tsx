@@ -47,7 +47,7 @@ export function Hero() {
           sizes="(max-width: 768px) 250vw, (max-width: 1024px) 120vw, 65vw"
           quality={95}
           className="h-full w-full !bg-transparent"
-          imgClassName="object-cover object-[85%_center] sm:object-[65%_center] lg:object-center"
+          imgClassName="object-cover object-[55%_center] sm:object-[35%_center] lg:object-center"
         />
       </div>
 
