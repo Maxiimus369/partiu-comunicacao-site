@@ -23,7 +23,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative isolate flex min-h-[100svh] lg:min-h-screen flex-col justify-between lg:justify-center lg:items-center overflow-hidden bg-[#080808] pt-20 pb-8 lg:py-0"
+      className="relative isolate flex min-h-[100svh] lg:min-h-screen flex-col justify-between lg:justify-center lg:items-center overflow-hidden bg-[#080808] pt-20 pb-3 lg:py-0"
     >
       {/* Background (z-0) */}
       {/* Removed DarkVeil temporarily for preview */}
@@ -58,7 +58,7 @@ export function Hero() {
       <div className="relative z-30 mx-auto flex flex-1 lg:flex-none flex-col w-full max-w-[90rem] px-5 sm:px-8 lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:items-center">
         
         {/* Left Column: Text at top (beside Marcos on mobile) and Button at bottom (on mobile) / under text (on desktop) */}
-        <div className="flex flex-1 lg:flex-none flex-col justify-between max-w-3xl pt-14 lg:pt-0 pb-4 lg:pb-0">
+        <div className="flex flex-1 lg:flex-none flex-col justify-between max-w-3xl pt-14 lg:pt-0 pb-0 lg:pb-0">
           <div>
             <FadeContent yOffset={12} delay={0.05}>
               <div className="mb-4 sm:mb-6 flex items-center gap-2.5 sm:gap-3 text-[0.68rem] sm:text-xs font-bold uppercase tracking-[0.2em] sm:tracking-[0.24em] text-brand-red">
