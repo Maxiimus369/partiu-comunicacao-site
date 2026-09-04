@@ -1,0 +1,17 @@
+.circular-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.circular-text span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: inherit;
+}
