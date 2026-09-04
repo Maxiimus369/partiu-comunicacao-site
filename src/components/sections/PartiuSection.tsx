@@ -19,7 +19,7 @@ export function PartiuSection() {
   ];
 
   return (
-    <section className="border-b border-white/5 bg-transparent py-24 text-white sm:py-32">
+    <section id="partiu" className="scroll-mt-24 border-b border-white/5 bg-transparent py-24 text-white sm:py-32">
       <div className="mx-auto max-w-[86rem] px-5 sm:px-8">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
           <div className="grid gap-12 md:grid-cols-[1.1fr_0.9fr] md:gap-10 lg:gap-12">
