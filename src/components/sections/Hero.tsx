@@ -37,17 +37,17 @@ export function Hero() {
       <div className="pointer-events-none absolute z-10 right-10 bottom-16 text-white/20 text-xl font-light leading-none hidden lg:block">+</div>
 
       {/* Right Image taking up the space (z-10) */}
-      <div className="absolute right-0 top-0 h-full w-[95%] sm:w-[85%] lg:w-[65%] z-10 opacity-75 lg:opacity-90 [mask-image:linear-gradient(to_right,transparent,black_40%,black_100%)] lg:[mask-image:linear-gradient(to_right,transparent,black_30%,black_100%)]">
+      <div className="absolute right-0 top-0 w-full aspect-[1/1.3] lg:aspect-auto lg:h-full lg:w-[65%] z-10 opacity-75 lg:opacity-90 [mask-image:linear-gradient(to_bottom,black_70%,transparent_100%)] lg:[mask-image:linear-gradient(to_right,transparent,black_30%,black_100%)]">
         <MediaSlot
           media={heroMedia}
           priority
           autoPlay={hasVideo}
           showPlaceholder
           placeholderLabel={hasVideo ? "Adicionar vídeo principal" : "Adicionar foto ou vídeo principal"}
-          sizes="(max-width: 768px) 250vw, (max-width: 1024px) 120vw, 65vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 120vw, 65vw"
           quality={95}
           className="h-full w-full !bg-transparent"
-          imgClassName="object-cover object-[55%_center] sm:object-[35%_center] lg:object-center"
+          imgClassName="object-cover object-[45%_center] lg:object-center"
         />
       </div>
 
