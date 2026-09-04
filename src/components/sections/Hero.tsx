@@ -23,7 +23,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative isolate flex min-h-screen items-center overflow-hidden bg-[#080808] pt-20"
+      className="relative isolate flex min-h-[100svh] sm:min-h-screen items-center overflow-hidden bg-[#080808] pt-24 sm:pt-20"
     >
       {/* Background (z-0) */}
       {/* Removed DarkVeil temporarily for preview */}
@@ -52,25 +52,25 @@ export function Hero() {
       </div>
 
       {/* Overlay to darken bottom for text if needed (z-20) */}
-      <div className="absolute inset-0 z-20 pointer-events-none bg-gradient-to-t from-[#080808] via-[#080808]/20 to-transparent lg:bg-gradient-to-t lg:from-[#080808] lg:via-transparent lg:to-transparent" />
+      <div className="absolute inset-0 z-20 pointer-events-none bg-gradient-to-t from-[#080808] via-[#080808]/40 to-transparent lg:bg-gradient-to-t lg:from-[#080808] lg:via-transparent lg:to-transparent" />
 
       {/* Content (z-30) */}
       <div className="relative z-30 mx-auto grid w-full max-w-[90rem] items-center gap-14 px-5 sm:px-8 lg:grid-cols-[1.35fr_0.65fr]">
         
         {/* Left Side: Text and Buttons */}
-        <div className="max-w-3xl pt-20 pb-20">
+        <div className="max-w-3xl pt-24 pb-14 sm:py-20">
           <FadeContent yOffset={12} delay={0.05}>
-            <div className="mb-6 flex items-start sm:items-center gap-3 text-[0.55rem] font-bold uppercase tracking-[0.2em] text-brand-red sm:text-xs sm:tracking-[0.24em]">
-              <span className="mt-2 sm:mt-0 h-px w-6 sm:w-8 bg-brand-red shrink-0" aria-hidden="true" />
-              <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+            <div className="mb-5 sm:mb-6 flex items-center gap-2.5 sm:gap-3 text-[0.7rem] sm:text-xs font-bold uppercase tracking-[0.2em] sm:tracking-[0.24em] text-brand-red">
+              <span className="h-px w-6 sm:w-8 bg-brand-red shrink-0" aria-hidden="true" />
+              <div className="flex items-center gap-2 sm:gap-3">
                 <span>Marcos Beltrã</span>
-                <span className="text-white/25 hidden sm:block">•</span>
+                <span className="text-white/30">•</span>
                 <span>Partiu Comunicação</span>
               </div>
             </div>
           </FadeContent>
 
-          <h1 className="max-w-[60%] sm:max-w-[65%] lg:max-w-[14ch] font-heading text-3xl sm:text-4xl lg:text-[clamp(3rem,7.8vw,6.5rem)] font-bold leading-[1.05] lg:leading-[0.95] tracking-[-0.04em] text-white/95">
+          <h1 className="max-w-[88%] sm:max-w-[75%] lg:max-w-[14ch] font-heading text-[2.15rem] sm:text-4xl lg:text-[clamp(3rem,7.8vw,6.5rem)] font-bold leading-[1.1] lg:leading-[0.95] tracking-[-0.035em] text-white/95">
             <TrueFocus
               sentence="Marketing que aparece no faturamento, não só no feed."
               manualMode={false}
@@ -83,17 +83,17 @@ export function Hero() {
           </h1>
 
           <FadeContent delay={0.55} yOffset={20}>
-            <p className="mt-5 sm:mt-6 max-w-[65%] sm:max-w-[75%] lg:max-w-xl text-[0.8rem] sm:text-sm lg:text-lg leading-[1.6] sm:leading-6 lg:leading-8 text-white/70">
+            <p className="mt-5 sm:mt-6 max-w-[85%] sm:max-w-[75%] lg:max-w-xl text-[0.95rem] sm:text-base lg:text-lg leading-[1.65] sm:leading-6 lg:leading-8 text-white/75">
               Estratégia, tráfego, conteúdo e produção audiovisual para empresas que querem crescer com direção, consistência e presença.
             </p>
           </FadeContent>
 
           <FadeContent delay={0.68} yOffset={20}>
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <div className="mt-12 sm:mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
               <Magnet>
                 <a
                   href="#portfolio"
-                  className="inline-flex w-full items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-bold text-black transition-transform hover:scale-105 sm:w-auto"
+                  className="inline-flex w-full items-center justify-center rounded-full bg-white px-9 py-4 text-base sm:text-sm font-bold text-black shadow-xl shadow-black/40 transition-transform active:scale-95 hover:scale-105 sm:w-auto"
                 >
                   Conhecer os projetos
                 </a>
