@@ -47,7 +47,7 @@ export function Hero() {
           sizes="(max-width: 768px) 250vw, (max-width: 1024px) 120vw, 65vw"
           quality={95}
           className="h-full w-full !bg-transparent"
-          imgClassName="object-cover object-[72%_center] sm:object-[65%_center] lg:object-center"
+          imgClassName="object-cover object-[85%_center] sm:object-[65%_center] lg:object-center"
         />
       </div>
 
@@ -61,7 +61,7 @@ export function Hero() {
         <div className="flex flex-1 lg:flex-none flex-col justify-between max-w-3xl pt-14 lg:pt-0 pb-0 lg:pb-0">
           <div>
             <FadeContent yOffset={12} delay={0.05}>
-              <div className="mb-4 sm:mb-6 flex items-center gap-2.5 sm:gap-3 text-[0.68rem] sm:text-xs font-bold uppercase tracking-[0.2em] sm:tracking-[0.24em] text-brand-red">
+              <div className="mb-8 sm:mb-10 flex items-center gap-2.5 sm:gap-3 text-[0.68rem] sm:text-xs font-bold uppercase tracking-[0.2em] sm:tracking-[0.24em] text-brand-red">
                 <span className="h-px w-5 sm:w-8 bg-brand-red shrink-0" aria-hidden="true" />
                 <div className="flex items-center gap-2 sm:gap-3">
                   <span>Marcos Beltrã</span>
@@ -71,7 +71,7 @@ export function Hero() {
               </div>
             </FadeContent>
 
-            <h1 className="max-w-[54%] sm:max-w-[65%] lg:max-w-[14ch] font-heading text-[1.72rem] sm:text-4xl lg:text-[clamp(3rem,7.8vw,6.5rem)] font-bold leading-[1.1] lg:leading-[0.95] tracking-[-0.035em] text-white">
+            <h1 className="max-w-[62%] sm:max-w-[65%] lg:max-w-[14ch] font-heading text-[2.1rem] sm:text-4xl lg:text-[clamp(3rem,7.8vw,6.5rem)] font-bold leading-[1.1] lg:leading-[0.95] tracking-[-0.035em] text-white">
               <TrueFocus
                 sentence="Marketing que aparece no faturamento, não só no feed."
                 manualMode={false}
@@ -84,7 +84,7 @@ export function Hero() {
             </h1>
 
             <FadeContent delay={0.55} yOffset={20}>
-              <p className="mt-3.5 sm:mt-6 max-w-[55%] sm:max-w-[70%] lg:max-w-xl text-[0.82rem] sm:text-base lg:text-lg leading-[1.5] sm:leading-6 lg:leading-8 text-white/75">
+              <p className="mt-3.5 sm:mt-6 max-w-[65%] sm:max-w-[70%] lg:max-w-xl text-[0.95rem] sm:text-base lg:text-lg leading-[1.5] sm:leading-6 lg:leading-8 text-white/75">
                 Estratégia, tráfego, conteúdo e produção audiovisual para empresas que querem crescer com direção, consistência e presença.
               </p>
             </FadeContent>

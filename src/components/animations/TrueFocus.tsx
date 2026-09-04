@@ -45,9 +45,18 @@ const TrueFocus = ({
 
   useEffect(() => {
     if (!manualMode) {
+      stepRef.current = 0;
+      setCompleted(false);
       const interval = setInterval(
         () => {
-          setCurrentIndex((prev) => (prev + 1) % words.length);
+          stepRef.current += 1;
+          if (stepRef.current >= words.length * 2) {
+            setCompleted(true);
+            setCurrentIndex(-1);
+            clearInterval(interval);
+          } else {
+            setCurrentIndex((prev) => (prev + 1) % words.length);
+          }
         },
         (animationDuration + pauseBetweenAnimations) * 1000
       );
