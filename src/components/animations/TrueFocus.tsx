@@ -44,26 +44,17 @@ const TrueFocus = ({
   }, []);
 
   useEffect(() => {
-    if (!manualMode && !reducedMotion) {
-      stepRef.current = 0;
-      setCompleted(false);
+    if (!manualMode) {
       const interval = setInterval(
         () => {
-          stepRef.current += 1;
-          if (stepRef.current >= words.length * 3) {
-            setCompleted(true);
-            setCurrentIndex(-1);
-            clearInterval(interval);
-          } else {
-            setCurrentIndex((prev) => (prev + 1) % words.length);
-          }
+          setCurrentIndex((prev) => (prev + 1) % words.length);
         },
         (animationDuration + pauseBetweenAnimations) * 1000
       );
 
       return () => clearInterval(interval);
     }
-  }, [manualMode, reducedMotion, animationDuration, pauseBetweenAnimations, words.length]);
+  }, [manualMode, animationDuration, pauseBetweenAnimations, words.length]);
 
   useEffect(() => {
     if (currentIndex === null || currentIndex === -1) return;
