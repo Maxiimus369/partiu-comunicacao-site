@@ -61,7 +61,7 @@ export function Hero() {
         <div className="flex flex-1 lg:flex-none flex-col justify-between max-w-3xl pt-14 lg:pt-0 pb-0 lg:pb-0">
           <div>
             <FadeContent yOffset={12} delay={0.05}>
-              <div className="mb-8 sm:mb-10 flex items-center gap-2.5 sm:gap-3 text-[0.68rem] sm:text-xs font-bold uppercase tracking-[0.2em] sm:tracking-[0.24em] text-brand-red">
+              <div className="mb-8 sm:mb-10 flex items-center gap-2.5 sm:gap-3 text-[0.58rem] sm:text-[0.7rem] font-bold uppercase tracking-[0.2em] sm:tracking-[0.24em] text-brand-red">
                 <span className="h-px w-5 sm:w-8 bg-brand-red shrink-0" aria-hidden="true" />
                 <div className="flex items-center gap-2 sm:gap-3">
                   <span>Marcos Beltrã</span>
