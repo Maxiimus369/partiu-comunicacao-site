@@ -44,8 +44,8 @@ export function Hero() {
           autoPlay={hasVideo}
           showPlaceholder
           placeholderLabel={hasVideo ? "Adicionar vídeo principal" : "Adicionar foto ou vídeo principal"}
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 95vw, 65vw"
-          quality={85}
+          sizes="(max-width: 768px) 250vw, (max-width: 1024px) 120vw, 65vw"
+          quality={95}
           className="h-full w-full !bg-transparent"
           imgClassName="object-cover object-[65%_center] lg:object-center"
         />

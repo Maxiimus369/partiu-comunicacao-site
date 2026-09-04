@@ -41,14 +41,16 @@ export function AboutSection() {
                 media={portrait}
                 showPlaceholder
                 placeholderLabel="Adicionar retrato profissional"
-                sizes="(max-width: 1024px) 60vw, 30vw"
+                sizes="(max-width: 768px) 70vw, (max-width: 1024px) 60vw, 30vw"
+                quality={92}
                 className="aspect-[4/5] rounded-xl"
               />
               <MediaSlot
                 media={atWork}
                 showPlaceholder
                 placeholderLabel="Adicionar registro em trabalho"
-                sizes="(max-width: 1024px) 34vw, 18vw"
+                sizes="(max-width: 768px) 45vw, (max-width: 1024px) 34vw, 18vw"
+                quality={92}
                 className="mb-7 aspect-[3/4] rounded-xl"
               />
             </div>

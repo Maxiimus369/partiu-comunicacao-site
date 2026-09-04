@@ -66,7 +66,8 @@ export function PartiuSection() {
                 media={team}
                 showPlaceholder
                 placeholderLabel="Adicionar equipe ou bastidores"
-                sizes="(max-width: 1024px) 48vw, 22vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 30vw"
+                quality={92}
                 className="aspect-[4/3] w-full rounded-xl"
               />
               <div className="w-full rounded-xl overflow-hidden">
